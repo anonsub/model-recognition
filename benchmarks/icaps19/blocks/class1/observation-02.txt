@@ -1,0 +1,105 @@
+(solution 
+(:objects b -  object d -  object f -  object e -  object c -  object g -  object a -  object )
+(:init (on c d) (ontable g) (on e f) (clear c) (on d b) (on a g) (ontable f) (on b e) (clear a) (handempty ))
+
+(:observations (on c d) (ontable g) (on e f) (clear c) (on d b) (on a g) (ontable f) (on b e) (clear a) (handempty ))
+
+(unstack-ok c d)
+
+(:observations (ontable g) (on e f) (on d b) (on a g) (ontable f) (on b e) (clear a) (holding c) (clear d))
+
+(stack c a)
+
+(:observations (ontable g) (on e f) (on d b) (on a g) (ontable f) (on b e) (clear a) (holding c) (clear d))
+
+(put-down c)
+
+(:observations (ontable g) (on e f) (on d b) (on a g) (ontable f) (on b e) (clear a) (clear d) (clear c) (handempty ) (ontable c))
+
+(unstack d b)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (on b e) (clear a) (clear c) (ontable c) (holding d) (clear b))
+
+(stack d a)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (on b e) (clear a) (clear c) (ontable c) (holding d) (clear b))
+
+(stack-ok d b)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (on b e) (clear a) (clear c) (ontable c) (clear d) (handempty ) (on d b))
+
+(unstack d b)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (on b e) (clear a) (clear c) (ontable c) (holding d) (clear b))
+
+(put-down d)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (on b e) (clear a) (clear c) (ontable c) (clear b) (clear d) (handempty ) (ontable d))
+
+(unstack b e)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (holding b) (clear e))
+
+(stack b a)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (holding b) (clear e))
+
+(put-down b)
+
+(:observations (ontable g) (on e f) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear e) (clear b) (handempty ) (ontable b))
+
+(unstack e f)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear b) (ontable b) (holding e) (clear f))
+
+(put-down e)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear b) (ontable b) (clear f) (clear e) (handempty ) (ontable e))
+
+(pick-up b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (holding b))
+
+(put-down b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (clear b) (handempty ) (ontable b))
+
+(pick-up b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (holding b))
+
+(stack b a)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (holding b))
+
+(put-down b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (clear b) (handempty ) (ontable b))
+
+(pick-up b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (holding b))
+
+(put-down b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (clear b) (handempty ) (ontable b))
+
+(pick-up b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (holding b))
+
+(put-down b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (clear b) (handempty ) (ontable b))
+
+(pick-up b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (holding b))
+
+(put-down b)
+
+(:observations (ontable g) (on a g) (ontable f) (clear a) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (clear b) (handempty ) (ontable b))
+
+(unstack a g)
+
+(:goal (ontable g) (ontable f) (clear c) (ontable c) (clear d) (ontable d) (clear f) (clear e) (ontable e) (clear b) (ontable b) (holding a) (clear g)))
